@@ -1,13 +1,12 @@
 import React from 'react'
-import { CountryList } from 'CountryList'
-import { SearchBar } from 'SearchBar';
+import { SearchBar } from 'Components/SearchBar';
 
 
 export const App = () => {
   return (
     <div>
-      {/*   <CountryList /> */}
-      SEARCH FUCKING BAR
+
+      <h1>Search for countries</h1>
       <SearchBar />
 
     </div>

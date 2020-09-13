@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import useDebounce from 'useDebounce';
+import { CurrencyExchange } from './CurrencyExchange';
 
 export const SearchBar = () => {
 
@@ -34,6 +35,11 @@ export const SearchBar = () => {
     [debouncedSearchTerm] // Only call effect if debounced search term changes
   );
 
+  function searchCountries(name) {
+    return fetch(`https://restcountries.eu/rest/v2/name/${name}`)
+      .then(res => res.json())
+  }
+
   return (
     <div>
       <div>
@@ -64,6 +70,10 @@ export const SearchBar = () => {
               <p>{country.currencies[0].code}</p>
             </div>
 
+            <CurrencyExchange
+              currencyOfCountry={country.currencies[0].code}
+            />
+
           </div>
 
         ))
@@ -73,12 +83,6 @@ export const SearchBar = () => {
 
 }
 
-function searchCountries(name) {
 
-
-  return fetch(`https://restcountries.eu/rest/v2/name/${name}`)
-    .then(res => res.json())
-
-}
 
 
