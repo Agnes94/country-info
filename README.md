@@ -1,19 +1,14 @@
 # Country info website
 
-This app has been generated using `create-react-app`, then cleaned up a little so we have a project with just the elements we need to get started.
+Simple react website with two main features. The first feature is the searchbar, which enables the user to search for a country and get information listed, like capital city, number of population and local currency. The second feature is the currency converter, that allows to enter an amount in SEK and get the amount converted into local currency for each country.
 
-Add components in the `src` folder and use them in `src/app.js` to get started.
+## Technologies used
 
-## Usage
+- React 
+- CSS3
+- JavaScript ES6
+- HTML5
+ 
+## Live website
 
-1. On GitHub, click the 'use this template' button to create a new repo on your account
-1. Clone the new repo to your computer
-1. Install required dependencies with npm: `npm install`
-1. Start the project: `npm start`
-
-Alternatively, if you don't want a new git repo on your account;
-
-1. Download & extract the [latest release](https://github.com/Technigo/react-starter/releases/latest) from GitHub
-1. Open the directory in the terminal: `cd /path/to/react-starter`
-1. Install required dependencies with npm: `npm install`
-1. Start the project: `npm start`
+https://country-info-agnesk.netlify.app/

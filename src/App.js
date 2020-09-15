@@ -4,7 +4,7 @@ import "Components/style.css";
 
 export const App = () => {
   return (
-    <div>
+    <div className="main-div">
       <h1 className="title">Search for countries</h1>
       <SearchBar />
     </div>

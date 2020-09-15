@@ -2,12 +2,16 @@ body {
   justify-content: center;
   align-items: center;
   display: flex;
-  height: 400px;
+  height: 100%;
 }
 
 .title {
   font-size: 50px;
-  margin-top: 200px;
+  margin-top: 100px;
+}
+
+h1 {
+  margin: 0px;
 }
 
 .searchbar-input {
@@ -47,15 +51,20 @@ body {
 }
 
 li {
-font-size: 25px;
-font-weight: 600;
-color: #ffff;
-padding-left: 5px;
+  font-size: 25px;
+  font-weight: 600;
+  color: #ffff;
+  padding-left: 5px;
 }
 
-.country-list {
- list-style: none;
- padding: 0;
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.countrylist-wrapper {
+  justify-content: row;
+  display: flex;
 }
 
 .list-title {
@@ -65,16 +74,27 @@ padding-left: 5px;
   margin-left: 0;
 }
 
+.list-wrapper {
+  backdrop-filter: blur(20px);
+  padding: 20px 40px;
+  border-radius: 14px;
+  margin-top: 20px;
+  max-height: calc(100vh - 80px);
+  overflow-y: scroll;
+}
+
 span {
   font-weight: 600;
   font-size: 20px;
   margin-left: 5px;
 }
 
- @media (min-width:360px) {
-
-body {
-  margin: 50px;
+.main-div {
+  backdrop-filter: blur(20px);
+  padding: 20px 40px;
+  border-radius: 14px;
+  margin-top: 20px;
+  max-height: calc(100vh - 80px);
+  overflow-y: scroll;
+  height: 100%;
 }
-
- }

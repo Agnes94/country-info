@@ -34,7 +34,7 @@ export const CurrencyExchange = (props) => {
 
   return (
     <>
-      <h1>Converter</h1>
+      <h1>Currency converter</h1>
       <CurrencyInput
         selectedCurrency={fromCurrency}
         onChangeCurrency={(e) => setFromCurrency(e.target.value)}

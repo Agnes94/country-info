@@ -56,7 +56,7 @@ export const SearchBar = () => {
 
       {results.length > 0 &&
         results.map((country) => (
-          <div key={country.cioc}>
+          <div className="list-wrapper" key={country.cioc}>
             <ul className="country-list">
               <li className="list-item"> <span className="list-title">Country: </span> {country.name}</li>
               <li className="list-item"><span className="list-title">Capital: </span> {country.capital}</li>
