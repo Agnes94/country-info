@@ -62,11 +62,6 @@ ul {
   padding: 0;
 }
 
-.countrylist-wrapper {
-  justify-content: row;
-  display: flex;
-}
-
 .list-title {
   font-size: 25px;
   color: rgb(89, 84, 84);

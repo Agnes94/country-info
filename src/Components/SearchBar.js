@@ -5,12 +5,9 @@ import { CurrencyExchange } from "./CurrencyExchange";
 export const SearchBar = () => {
   const [error, setError] = useState();
   const [searchTerm, setSearchTerm] = useState("");
-  // API search results
   const [results, setResults] = useState([]);
-  // Searching status (whether there is pending API request)
   const [isSearching, setIsSearching] = useState(false);
   // Debounce search term so that it only gives us latest value ...
-  // ... if searchTerm has not been updated within last 500ms
   // As a result the API call should only fire once user stops typing
   const debouncedSearchTerm = useDebounce(searchTerm, 500);
 
