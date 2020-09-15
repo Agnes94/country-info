@@ -58,10 +58,10 @@ export const SearchBar = () => {
         results.map((country) => (
           <div key={country.cioc}>
             <ul className="country-list">
-              <li>Country: {country.name}</li>
-              <li>Capital: {country.capital}</li>
-              <li>Number of population: {country.population}</li>
-              <li>Currency: {country.currencies[0].code}</li>
+              <li className="list-item"> <span className="list-title">Country: </span> {country.name}</li>
+              <li className="list-item"><span className="list-title">Capital: </span> {country.capital}</li>
+              <li className="list-item"><span className="list-title">Number of population: </span> {country.population}</li>
+              <li className="list-item"><span className="list-title">Currency: </span> {country.currencies[0].code}</li>
             </ul>
 
             <CurrencyExchange currencyOfCountry={country.currencies[0].code} />

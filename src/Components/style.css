@@ -47,13 +47,22 @@ body {
 }
 
 li {
-font-size: 20px;
+font-size: 25px;
 font-weight: 600;
+color: #ffff;
+padding-left: 5px;
 }
 
 .country-list {
  list-style: none;
- padding-left: 5px;
+ padding: 0;
+}
+
+.list-title {
+  font-size: 25px;
+  color: rgb(89, 84, 84);
+  opacity: 0.9;
+  margin-left: 0;
 }
 
 span {
@@ -62,4 +71,10 @@ span {
   margin-left: 5px;
 }
 
+ @media (min-width:360px) {
 
+body {
+  margin: 50px;
+}
+
+ }
