@@ -11,8 +11,5 @@ Simple react website with two main features. The first feature is the searchbar,
  
 ## Live website
 
-<<<<<<< HEAD
 https://country-info-agnesk.netlify.app/
-=======
-https://country-info-agnesk.netlify.app/
->>>>>>> 774e22cd79e4a3fe455ad13ad5c75644814bb49c
+
